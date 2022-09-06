@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link gg font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- link css  -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- link bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="banner">
+        <img src="image/banner.png" alt="">
+        <div class="content-banner">
+            <div class="slider">
+                Chi's Cake
+            </div> 
+        </div>
+    </div>
+    <div class="wrapper-nav">
+        <div class="nav-container">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Order</a></li>
+                <li><a href="" class="active">Contact</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="form">
+        <div class="title">
+            Contact me
+        </div>
+        <div class="form-container">
+            <div class="form-content">
+                <div class="row">
+                    <div class="label col-2">
+                        Your name:
+                    </div>
+                    <div class="form-group col-5">
+                        <input type="text" name="" id="inp-name" placeholder="Please enter your full name">
+                        <p id="warning-name" class="warning"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label col-2">
+                        Your email:
+                    </div>
+                    <div class="form-group col-5" id="form-email">
+                        <input class="inp-email" type="text" name="" id="inp-email" placeholder="Please enter your email" onkeydown="validateEmail()">
+                        <p id="warning-email" class="warning"></p>
+                        <p id="text" class="text"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label col-2">
+                        Subject:
+                    </div>
+                    <div class="form-group col-5">
+                        <input type="text" name="" id="inp-subject" placeholder="">
+                        <p id="warning-subject" class="warning"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label label-last col-2">
+                        Message:
+                    </div>
+                    <div class="form-group col-5">
+                        <textarea name="" id="area-mes" placeholder=""></textarea>
+                        <p id="warning-mes" class="warning"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="form-btn col-5" >
+                        <Button id="btn-send" onclick="onClickButton()"> Send message</Button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-5" id="result">
+                        <!-- <i class="fa-solid fa-check" style="margin-right: 12px;"></i>Bạn đã gửi thành công! -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+:root{
+    --font:'Dancing Script', cursive;
+    --textColor:#a36a6a;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+}
+ul{
+    list-style: none;
+    padding: none !important;
+}
+a{
+    text-decoration: none !important;
+}
