@@ -18,6 +18,7 @@ function onClickButton(){
         showFailResult();
     } 
     else{
+        showData(vObjectData);
         showSuccessResult();
     }
 }
@@ -85,7 +86,7 @@ function getDataByForm(paraData){
         paraData.subject = vSubject.value;
         paraData.message = vMess.value;
 }
-// hien thị thành công
+
 
 // validate email 
 function validateEmail(){
@@ -120,16 +121,26 @@ function validateEmail(){
 }
 
 // show result 
-
+// hien thị thành công
 function showSuccessResult(){
     let result  = document.getElementById("result");
     result.classList.remove("fail");
     result.classList.add("success");
     result.innerHTML = `<i class="fa-solid fa-check" style="margin-right: 12px;"></i>Dữ liệu kiểm tra đã hợp lệ!`;
 }
+// hien thi that bai
 function showFailResult(){
     let result  = document.getElementById("result");
     result.classList.remove("success");
     result.classList.add("fail");
     result.innerHTML = `<i class="fa-solid fa-xmark" style = "margin-right:12px;"></i>Dữ liệu kiểm tra chưa hợp lệ!`;
+}
+
+// show du lieu lay duoc tu form
+function showData(paraData){
+    alert(`Dữ liệu nhận được từ form là: 
+            Tên: ${paraData.yourname}
+            Email: ${paraData.youremail}
+            Subject: ${paraData.subject}
+            Message: ${paraData.message}`)
 }
