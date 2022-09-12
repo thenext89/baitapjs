@@ -5,6 +5,9 @@ $(document).ready(function () {
     $(`#btn-send`).on(`click`, function () {
         onClickButton();
     })
+    $(`#inp-email`).on(`keydown`, function () {
+        validateEmail();    
+    });
     function onClickButton() {
         // khoi tao doi tuong
         let vObjectData = {
