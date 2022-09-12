@@ -45,7 +45,7 @@ $(document).ready(function () {
             result = false;
         }
         else {
-            waringName.html(``);
+            warningName.html(``);
         }
         if (paraData.youremail == "") {
             warningEmail.html (`Không được để trống Email!`);

@@ -43,11 +43,14 @@
 .nav-container ul li{
     padding: 12px 10px 18px 10px;
 }
+
 .nav-container ul li a{
     font-family: var(--font);
     color: var(--textColor);
     font-size: 20px;
     font-weight: 700;
+    text-decoration: underline !important;
+
 }
 .nav-container ul li .active{
     color: blue;
